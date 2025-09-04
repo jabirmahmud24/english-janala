@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Janala</title>
+    <!-- DAISY UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS (Custom) -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar bg-[#BADEFF26] shadow-sm">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">
+              <div class="flex justify-center items-center gap-2">
+                <h4>English</h4>
+                <img src="./assets/logo.png" alt="" />
+                <h4 class="bangla-font font-semibold">জানালা</h4>
+              </div></a
+            >
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 space-x-2">
+              <li class="btn btn-outline btn-primary">
+                <a><i class="fa-solid fa-circle-question"></i> FAQ </a>
+              </li>
+              <li>
+                <details>
+                  <summary class="btn btn-outline btn-primary">
+                    <i class="fa-solid fa-book-open"></i> Learn
+                  </summary>
+                  <ul class="p-2">
+                    <li><a>111</a></li>
+                    <li><a>222</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li class="btn btn-outline btn-primary">
+                <a><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="text-gray-300" />
+      </nav>
+      <section
+        class="flex flex-col-reverse md:flex md:flex-row justify-center items-center px-12"
+      >
+        <div class="h-[50] text-center md:text-left">
+          <h4 class="text-4xl font-bold">
+            <span class="text-sky-400">English</span> is Easy!!
+          </h4>
+          <p class="bangla-font w-full md:w-10/12 my-4">
+            আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+            আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+            অন্য একটি Level এ
+          </p>
+          <fieldset class="flex flex-col gap-3">
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              class="input w-full md:w-10/12"
+            />
+            <input
+              type="text"
+              placeholder="Password"
+              class="input w-full md:w-10/12"
+            />
+            <button class="btn btn-primary md:w-[8rem]">Get Started</button>
+          </fieldset>
+        </div>
+        <div class="h-[50%]">
+          <img class="h-full w-full" src="./assets/hero-student.png" alt="" />
+        </div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <!-- Lets Learn Vocabularies Section -->
+        <h4 class="text-3xl font-bold text-center">
+          <span class="text-sky-400">Let's</span> Learn Vocabularies
+        </h4>
+        <div
+          id="level-container"
+          class="flex justify-center flex-wrap gap-5 mt-4"
+        ></div>
+      </section>
+      <section
+        id="word-container"
+        class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5"
+      >
+        <div class="bangla-font text-center col-span-full">
+          <p class="text-xl font-medium text-gray-400 rounded-xl py-10">
+            আপনি এখনো কোন Lesson Select করেন নি
+          </p>
+          <h2 class="font-bold text-4xl">একটি Lesson Select করুন।</h2>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./script/index.js">
+      console.log("Script Connected")
+    </script>
+  </body>
+</html>
