@@ -1,3 +1,5 @@
+## ⚡ Live Link: https://jabirmahmud24.github.io/english-janala/
+
 # ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
 
 ---
